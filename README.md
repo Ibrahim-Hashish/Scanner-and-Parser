@@ -1,8 +1,8 @@
-## Scanner-and-Parser
-# Overview
+# Scanner-and-Parser
+## Overview
 This project implements a scanner (lexer) and parser for a simplified subset of C++ using Python. Users can input C++ code, the scanner tokenizes it, and the parser validates the syntax.
 
-# The tool supports:
+## The tool supports:
 - Variable declarations and assignments
 - Arithmetic, comparison, and logical operations
 - if / else statements
@@ -10,7 +10,7 @@ This project implements a scanner (lexer) and parser for a simplified subset of 
 - int main() function with optional return statement
 The parser prints “Code accepted” if the input is syntactically correct or provides a syntax error message otherwise. Tokens are displayed before parsing.
 
-# The grammar rules:
+## The grammar rules:
 PROGRAM         -> MAIN_FUNCTION | STATEMENTS
 MAIN_FUNCTION   -> int main() BLOCK
 STATEMENTS      -> STATEMENT STATEMENTS | ε
@@ -43,7 +43,7 @@ NUMBER          -> digit { digit } [ . digit { digit } ]
 LETTER          -> A..Z | a..z | _
 DIGIT           -> 0..9
 
-# Usage
+## Usage
 1- Run the program
 2- Enter your C++ code line by line.
 3- Type END to finish input.
@@ -53,6 +53,4 @@ DIGIT           -> 0..9
 
 
 
-
-
-DIGIT           -> 0..9
+DIGIT           -> 
